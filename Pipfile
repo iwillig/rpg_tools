@@ -7,11 +7,11 @@ name = "pypi"
 pyramid = "==2.0.2"
 mako = "==1.2.4"
 sqlalchemy = "==2.0.21"
+black = "*"
 
 [dev-packages]
 pytest = "*"
 ipython = "*"
-
 
 [requires]
 python_version = "3.11"

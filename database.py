@@ -18,8 +18,9 @@ class Base(DeclarativeBase):
 class Person(Base):
     __tablename__ = "person"
     id: Mapped[int] = mapped_column(primary_key=True)
-    name: Mapped[str] = mapped_column(String(30))
+    name: Mapped[str] = mapped_column(String(32))
     fullname: Mapped[Optional[str]]
+    password: Mapped[str] = mapped_column(String(256))
 
 
 class Character(Base):
