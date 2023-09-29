@@ -23,9 +23,18 @@ class Person(Base):
     password: Mapped[str] = mapped_column(String(256))
 
 
+class Attribute(Base):
+    __tablename__ = 'attribute'
+
+class Campaign(Base):
+    __tablename__ = "campaign"
+    id = Mapped[int] = mapped_column(primary_key=True)
+
+
 class Character(Base):
     __tablename__ = "character"
     id: Mapped[int] = mapped_column(primary_key=True)
+    name: Mapped[str] = mapped_column(String(32))
 
 
 def create_all_tables(engine):
