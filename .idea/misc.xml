@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
-    <option name="sdkName" value="Pipenv (rpg_tools)" />
+    <option name="enabledOnReformat" value="true" />
+    <option name="enabledOnSave" value="true" />
+    <option name="sdkUUID" value="bf852dba-4fa1-4b60-9053-91a405978556" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_20" project-jdk-name="Pipenv (rpg_tools)" project-jdk-type="Python SDK">
     <output url="file://$PROJECT_DIR$/out" />
