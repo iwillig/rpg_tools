@@ -24,6 +24,13 @@ class Person(Base):
     password: Mapped[str] = mapped_column(String(256))
 
 
+class AbilityType(Base):
+    __tablename__ = "ability_type"
+    id: Mapped[int] = mapped_column(primary_key=True)
+    display_name: Mapped[str] = mapped_column(String(32))
+    name_type: Mapped[str] = mapped_column(String(32))
+
+
 class Ability(Base):
     __tablename__ = "ability"
     id: Mapped[int] = mapped_column(primary_key=True)
